@@ -1,0 +1,278 @@
+/* Re:set */
+        * {
+            margin: 0;
+            padding: 2;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a3cbf3;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.986);
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            width: 90px;
+            height: 75px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .navbar .logo a {
+            font-size: 18px;
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(1, 1, 1);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: rgb(5, 5, 5);
+            text-decoration: none;
+            font-size: 17px;
+            transition: color 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-links a:hover {
+            color: #d8890b;
+            font-size: large;
+            transition: 1s;
+        }
+
+        
+        .hero-section .content {
+            background-color: rgba(245, 184, 184, 0.6);
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+        }
+
+        /* Fabrication Banner */
+        .fabrication-banner {
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .fabrication-banner .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: #000000;
+            width: 80%;
+        }
+
+        .banner-heading {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .subtext {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .upload-input {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .fabrication-banner {
+                height: auto;
+                padding: 40px 0;
+            }
+        }
+
+        .hero-section {
+            background-image: url('logo1.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: auto; /*the image fixed */
+            height: 1200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            opacity: 85%;
+        }
+
+        h3:hover {
+            color: #00a816;
+            font-size: 30px;
+            transition: 1s;
+        }
+
+        h4 {
+            background-color: #a3cbf3;
+            padding: 2%;
+        }
+        h5 {
+            background-color: rgb(43, 107, 107);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            color: white;
+            padding: 0.5;
+            text-align: center;
+        }
+
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+
+        .photo, img {
+            height:45%;
+            width:2px auto;
+            padding:0px auto;
+            object-fit: cover;
+            margin:3px;
+            border-radius:20px ;
+            align-items:left ;
+        }
+        
+        .photo,img:hover {
+            width: auto;
+            height: auto;
+        margin: auto;
+        padding: 2px;
+    border-radius:42px;
+animation-duration: 5s;
+    transition: 0.75s;
+            
+        }
+
+  footer{background-color: #000;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 5px;
+        width: 100%;
+        position: relative;}
+
+        strong,li{padding-left: 2px;
+            position: relative;}
+            
+.more1{
+    text-align: center;
+    text-transform:capitalize;
+    color: rgb(5, 5, 5);
+            text-decoration: none;
+            font-size: 17px;
+            transition: color 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap; /* so they stack on smaller screens */
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: grey;
+}
+
+.callbutton{background-color: #1F3A64;
+flex: 1 1 120px; /* responsive sizing */
+  text-align: center;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 650;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+    
+}
+
+.emailbutton {
+  flex: 1 1 120px; /* responsive sizing */
+  text-align: center;
+  padding: 12px 20px;
+  background: #D8890B;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.callbutton:hover, .emailbutton:hover {
+  background: wheat;
+  color: black;
+}
+.whatbutton{background-color: #1ebd5a;
+    flex: 1 1 120px; /* responsive sizing */
+  text-align: center;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 650;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.whatbutton:hover {
+  background-color: green;
+  color: black;
+}
+.services-content {
+  max-width: 900px;
+  margin: 10px;
+  padding: 7px 7px;  /* Yeh padding readability improve karega */
+  border-radius: 10px;
+  line-height: 1.8;
+  font-size: 16px;
+}
